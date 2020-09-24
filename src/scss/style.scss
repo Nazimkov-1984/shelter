@@ -1,13 +1,11 @@
 @import "vars";
 @import "mixins";
 @import "common";
-@import "./site_section/main-screen";
-@import "./site_section/header";
-@import "./site_section/about";
-@import "./site_section/sertificates";
-@import "./site_section/footer";
-@import "./site_section/portfolios";
-@import "./site_page/charger";
-@import "./site_page/bouncy";
-@import "./site_page/bootstrap";
-@import "./site_page/cbd";
+@import "header";
+@import "main-screen";
+@import "about";
+@import "our-friends";
+@import "than";
+@import "addition";
+@import "footer"
+
