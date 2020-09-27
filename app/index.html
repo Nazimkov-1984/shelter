@@ -3,37 +3,54 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="initial-scale=1.0, width=device-width">
-	<title>Title</title>
-	<link rel="shortcut icon" type="image/x-icon" href="assets/fav/favicon.ico">
+	<title>Shelter</title>
+	<link rel="shortcut icon" type="image/x-icon" href="./assets/fav/favicon.ico">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<header class="header">
-        <h1 class="header__title"> Cozy House</h1>
-        <div class="header__logo">
-            <span>Cozy House</span>
-            <span>Shelter for pets in Boston</span>
-        </div>
-        <nav>
-            <ul class="header__nav">
-                <li class="header__nav__item"><a href="#about" class="header__item__link">About the shelter</a></li>
-                <li class="header__nav__item"><a href="#our_pets" class="header__item__link">Our pets</a></li>
-                <li class="header__nav__item"><a href="#than" class="header__item__link">To help the shelter</a></li>
-                <li class="header__nav__item"><a href="#footer" class="header__item__link">Contacts</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="container">
+
     <main>
         <section class="not-only">
-            <h2 class="not-only__title">Not only people need a house</h2>
-            <p class="not-only__text"></p>
-            <a href="#" class="not_only__button">Make a friend</a>
+            <header class="header">
+                <h1 class="header__title"> Cozy House</h1>
+                <div class="header__logo">
+                    <span class="header__logo__title">Cozy House</span>
+                    <span class="header__logo__subtitle">Shelter for pets in Boston</span>
+                </div>
+                <nav>
+                    <ul class="header__nav">
+                        <li class="header__nav__item"><a href="#about" class="header__nav__item__link header__nav__item__link--active">About the shelter</a></li>
+                        <li class="header__nav__item"><a href="#our_pets" class="header__nav__item__link">Our pets</a></li>
+                        <li class="header__nav__item"><a href="#than" class="header__nav__item__link">To help the shelter</a></li>
+                        <li class="header__nav__item"><a href="#footer" class="header__nav__item__link">Contacts</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="not-only__content">
+                <div class="not-only__content__text-wrapper">
+                    <h2 class="not-only__title">Not only people need a house</h2>
+                    <p class="not-only__text">We offer to give a chance to a little and nice puppy with an extremely wide and open heart. He or she will love you more than anybody else in the world, you will see!</p>
+                    <a href="#" class="not-only__button">Make a friend</a>
+                </div>
+               
+                <img src="./img/start-screen-puppy.png" alt="foto puppy">
+            </div>
+            
         </section>
         <section class="about" id= "about">
-            <h2 class="about__title">About the shelter</h2>
-            <h2 class="about__subtitle">Cosy House</h2>
+            
+            <img class="about__img" src="./img/about-pets.png" alt="dogs and cats">
+            <div class="about__text-wrapper">
+                <h2 class="about__title">About the shelter</h2>
+                <h2 class="about__subtitle">Cosy House</h2>
+    
+                <p class="about__text-top">Currently we have 121 dogs and 342 cats on our hands and statistics show that only 20% of them will find a family. The others will continue to live with us and will be waiting for a lucky chance to become dearly loved.</p>
+                <p class="about__text-bottom">We feed our wards with the best food and make sure that they do not get sick, feel comfortable (including psychologically) and well. We are supported by 87 volunteers and 28 employees of various skill levels. About 12% of the animals are taken by the shelter staff. Taking care of the animals, they become attached to the pets and would hardly ever leave them alone.</p>
+    
+            </div>
+            
 
-            <p class="about__text"></p>
         </section>
         <section class="our-friends" id="our_pets">
             <h2 class="our-friends__title">Our friends who are looking for a house</h2>
@@ -143,6 +160,7 @@
         </div>
         <img src="" alt="" class="footer__img">
     </footer>
+</div>
 	<script src="js/bundle.js"></script>
 </body>
 </html>

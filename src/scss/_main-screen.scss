@@ -1,15 +1,45 @@
 $styles: not-only;
 .#{$styles}{
+    @include flex (center, center, column);
 background: url(../img/start-screen-background.jpg) no-repeat;
 background-position: center center;
+padding-top: 60px;
+width: 1920px;
 &__title{
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 44px;
+    font-size: $H700;
     font-weight: 400;
     width: 310px;
     color:$text-main-color;
+    line-height: 130%;
+    margin-bottom: 42px;
 }
-&__text{}
-&__button{}
+&__content {
+    @include flex (center, center, row);
+}
+&__content__text-wrapper{
+    @include flex (center, flex-start, column);  
+    margin-right: 42px;
+}
+&__text {
+    width: 460px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: $H100;
+    font-weight: 400;
+    width: 460px;
+    color:$text-main-color;
+    line-height: 160%;
+    margin-bottom: 41px; 
+}
+&__button{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: $H200;
+    font-weight: 400;
+    color: $button-text-color;
+    letter-spacing: 0.06em;
+    padding: 15px 45px;
+    background-color: $button-background-color;
+    border-radius: 300px;
+}
 
 }
