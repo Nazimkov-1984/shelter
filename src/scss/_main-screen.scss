@@ -41,5 +41,7 @@ width: 1920px;
     background-color: $button-background-color;
     border-radius: 300px;
 }
-
+&__button:hover{
+    background-color: $backgroun-addition-card-hover-color;
+}
 }
