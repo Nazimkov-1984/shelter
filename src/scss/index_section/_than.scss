@@ -3,8 +3,10 @@ $styles: than;
     @include flex (center, center, column);
     padding-top: 80px;
     padding-bottom: 100px;
+
+    
     &__title{
-        width: 308px;
+        width: 310px;
         font-family: Georgia, 'Times New Roman', Times, serif;
         font-size: $H600;
         font-weight: 400;
@@ -12,6 +14,7 @@ $styles: than;
         line-height: 130%;
         margin-bottom: 60px;
         text-align: center;
+        letter-spacing: 0.06em;
     }
     &__list-top, &__list-bottom{
         @include flex (center, center, row);
@@ -35,6 +38,7 @@ $styles: than;
         font-weight: 400;
         color: $text-othan-text-color;
         letter-spacing: 0.06em;
+        line-height: 115%;
     }
    
    

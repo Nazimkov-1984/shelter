@@ -4,6 +4,8 @@ $styles: our-friends;
     background-color: #F6F6F6;
     padding-top: 80px;
     padding-bottom: 100px;
+
+    
     &__title{
         font-family: Georgia, 'Times New Roman', Times, serif;
         font-size: $H600;
@@ -19,13 +21,13 @@ $styles: our-friends;
         @include flex (center, center, row);
         margin-bottom: 60px;
     }
-    &__slider__button--left, &__slider__button--right{
+    &__slider__button--left, &__slider__button--right {
         border: 2px solid $border-our-friends-border-color;
         border-radius: 100px;
-        padding: 23px 19px 23px 19px;
+        padding: 23px 19px 21px 17px;
         transition: all .8s;
     }
-    &__slider__button--left:hover, &__slider__button--right:hover{
+    &__slider__button--left:hover, &__slider__button--right:hover {
         background-color: $arrow-bacground-color-hover;
         cursor: pointer;
     }
@@ -37,9 +39,9 @@ $styles: our-friends;
     }
     &__slider__list__items{
         @include flex (center, center, column);
-        padding: 30px 35px; 
         margin-right: 90px;
         transition: all .7s;
+        padding-bottom: 30px;
     }
     &__slider__list__items:hover{
         cursor: pointer;

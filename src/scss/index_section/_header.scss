@@ -1,22 +1,23 @@
 $styles: header;
-.#{$styles}{
+.#{$styles} {
 @include flex (center, center, row);
-width: 1920px;
 margin-bottom: 60px;
 &__title{
     display:none;
 }
 &__logo {
     @include flex (center, flex-start, column);
-    margin-right: 573px;  
+    margin-right: 570px;  
 }
 &__logo__title {
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: normal;
     font-size: $H550;
     font-weight: 400;
     color: $text-logo-main;
     margin-bottom: 10px;
+    letter-spacing: 0.06em;
 }
 &__logo__subtitle {
     font-family: Arial, Helvetica, sans-serif;
@@ -24,21 +25,24 @@ margin-bottom: 60px;
     font-weight: 400;
     color: $text-main-color;
     letter-spacing: 0.1em; 
+    text-align: center;
 }
 &__nav{
     @include flex (center, center, row);    
 }
 &__nav__item{
-    margin-right: 35px;
+    margin-right: 30px;
+}
+&__nav__item:last-child{
+    margin-right: 0px;
 }
 &__nav__item__link{
-    text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-size: $H100;
     font-weight: normal;
     font-style: normal;
     color: $text-main-color;   
-    padding-bottom: 7px;
+    padding-bottom: 4px;
     line-height: 160%;
 }
 &__nav__item__link:hover{

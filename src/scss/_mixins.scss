@@ -1,9 +1,4 @@
-@mixin text($size, $weight: 400, $color: $text-main-color) {
-    font-size: $size;
-    font-weight: $weight;
-    color: $color;
-    @content;
-  }
+
   @mixin flex(
   $justify-content: flex-start,
   $align-items: stretch,
@@ -17,14 +12,5 @@
   flex-wrap: $wrap;
 }
 
-@mixin font_Lato {
-  font-family: 'Lato', sans-serif;
-}
-@mixin font_Montserat {
-  font-family: 'Montserrat', sans-serif;
-}
-@mixin font_Montserat--bold {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-}
+
 

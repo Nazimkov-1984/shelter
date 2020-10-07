@@ -1,8 +1,10 @@
 $styles: about;
-.#{$styles}{
+.#{$styles} {
     @include flex (center, center, row);
     padding-top: 80px;
     padding-bottom: 100px;
+
+    
     &__img{
         margin-right: 120px;
     }
@@ -12,9 +14,12 @@ $styles: about;
     &__title{
         font-family: Georgia, 'Times New Roman', Times, serif;
         font-size: $H600;
-        font-weight: 400;
+        font-style: normal;
+        font-weight: normal;
         color: $text-about-title-color;
         margin-bottom: 13px;
+        letter-spacing: 0.06em;
+        line-height: 103%;
     }
     &__subtitle{
         font-family: Georgia, 'Times New Roman', Times, serif;
@@ -22,6 +27,8 @@ $styles: about;
         font-weight: 400;
         color: $text-about-title-color;
         margin-bottom: 25px;
+        letter-spacing: 0.06em;
+        
     }
     &__subtitle::before,
     &__subtitle::after {

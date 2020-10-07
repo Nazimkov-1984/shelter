@@ -1,7 +1,6 @@
 $styles: footer;
 .#{$styles}{
-    width: 100%;
-    @include flex (center, center, row);
+    @include flex (center, flex-start, row);
     background: url(../img/footer-background.png) no-repeat;
     background-position: center center;
     background-size: cover;
@@ -9,6 +8,7 @@ $styles: footer;
     
     &__left-column{
         margin-right: 161px;
+        padding-top: 14px;
     }
     &__left-column__title{
         font-family: Georgia, 'Times New Roman', Times, serif;
@@ -53,6 +53,7 @@ $styles: footer;
 
     &__right-column{
         margin-right: 160px;
+        padding-top: 14px;
     }
     &__right-column__title{
         font-family: Georgia, 'Times New Roman', Times, serif;
@@ -60,13 +61,13 @@ $styles: footer;
         font-weight: normal;
         color:$text-main-color;
         line-height: 130%;
-        margin-bottom: 40px;
+        margin-bottom: 34px;
         letter-spacing: 0.06em;
         width: 270px;
     }
     &__right-column__first-adress{
         @include flex (flex-start, center, row);
-        margin-bottom: 40px;
+        margin-bottom: 34px;
     }
     &__right-column__first-adress__icon{
         margin-right: 20px; 
