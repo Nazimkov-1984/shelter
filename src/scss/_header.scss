@@ -1,0 +1,51 @@
+$styles: header;
+.#{$styles}{
+@include flex (center, center, row);
+width: 1920px;
+margin-bottom: 60px;
+&__title{
+    display:none;
+}
+&__logo {
+    @include flex (center, flex-start, column);
+    margin-right: 573px;  
+}
+&__logo__title {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: $H550;
+    font-weight: 400;
+    color: $text-logo-main;
+    margin-bottom: 10px;
+}
+&__logo__subtitle {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: $H50;
+    font-weight: 400;
+    color: $text-main-color;
+    letter-spacing: 0.1em; 
+}
+&__nav{
+    @include flex (center, center, row);    
+}
+&__nav__item{
+    margin-right: 35px;
+}
+&__nav__item__link{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: $H100;
+    font-weight: normal;
+    font-style: normal;
+    color: $text-main-color;   
+    padding-bottom: 7px;
+    line-height: 160%;
+}
+&__nav__item__link:hover{
+    border-bottom: 3px solid $border-nav-color;
+}
+&__nav__item__link--active {
+border-bottom: 3px solid $border-nav-color;
+}
+
+}
