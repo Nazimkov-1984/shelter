@@ -17,9 +17,22 @@ $styles: our-friends;
         text-align: center;
         letter-spacing: 0.06em;
     }
+    @media (max-width:320px){
+        &__title {
+            font-size: $H500;
+            width: 300px;
+            margin-bottom: 42px;
+        } 
+    }
     &__slider{
         @include flex (center, center, row);
         margin-bottom: 60px;
+    }
+    @media (max-width:320px){
+        &__slider {
+            margin-bottom: 42px;
+            flex-direction: column;
+        } 
     }
     &__slider__button--left, &__slider__button--right {
         border: 2px solid $border-our-friends-border-color;
@@ -27,12 +40,34 @@ $styles: our-friends;
         padding: 23px 19px 21px 17px;
         transition: all .8s;
     }
+    @media (max-width:320px){
+        &__slider__button--left {
+            order: 4;
+            margin-right: 0px;
+        } 
+    }
     &__slider__button--left:hover, &__slider__button--right:hover {
         background-color: $arrow-bacground-color-hover;
         cursor: pointer;
     }
     &__slider__button--left{
         margin-right: 53px;
+    }
+    @media (max-width:320px){
+        &__slider__button--left {
+            margin-right: 0px;
+            position: absolute;
+            top: 2400px;
+            left: 65px;
+        } 
+    }
+    @media (max-width:320px){
+        &__slider__button--right {
+            margin-right: 0px;
+            position: absolute;
+            top: 2400px;
+            left: 200px;
+        } 
     }
     &__slider__list{
         @include flex (center, center, row);
@@ -42,6 +77,22 @@ $styles: our-friends;
         margin-right: 90px;
         transition: all .7s;
         padding-bottom: 30px;
+    }
+    @media (max-width: 320px){
+        &__slider__list__items{
+            margin-right: 0px;
+            margin-bottom: 80px;
+        }  
+    }
+    @media (max-width: 320px){
+        &__slider__list__items:last-child{
+            display: none;
+        }  
+    }
+    @media (max-width: 320px){
+        &__slider__list__items:nth-child(2){
+            display: none;
+        }  
     }
     &__slider__list__items:hover{
         cursor: pointer;
@@ -87,5 +138,11 @@ $styles: our-friends;
     }
     &__button:hover{
         background-color: $backgroun-addition-card-hover-color;
+    }
+}
+@media (max-width: 320px){
+    .our-friends {
+        padding-top: 42px;
+        padding-bottom: 42px;
     }
 }

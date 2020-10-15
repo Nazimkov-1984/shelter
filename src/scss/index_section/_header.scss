@@ -9,6 +9,11 @@ margin-bottom: 60px;
     @include flex (center, flex-start, column);
     margin-right: 570px;  
 }
+@media (max-width: 320px){
+    &__logo {
+        margin-right: 43px;
+    }
+}
 &__logo__title {
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -26,6 +31,14 @@ margin-bottom: 60px;
     color: $text-main-color;
     letter-spacing: 0.1em; 
     text-align: center;
+}
+&__burger {
+    display: none;
+}
+@media (max-width:320px){
+    &__burger {
+        display: block;
+    } 
 }
 &__nav{
     @include flex (center, center, row);    
@@ -51,5 +64,15 @@ margin-bottom: 60px;
 &__nav__item__link--active {
 border-bottom: 3px solid $border-nav-color;
 }
+@media (max-width: 320px){
+    &__nav {
+        display: none;
+    }
+}
 
+@media (max-width: 320px){
+    &__header {
+       margin-bottom: 0px;
+    }
+}
 }

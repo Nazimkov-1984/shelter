@@ -8,8 +8,23 @@ $styles: about;
     &__img{
         margin-right: 120px;
     }
+    @media (max-width:320px){
+        &__img {
+            margin-right: 0px;
+            width: 260px;
+        }
+    }
     &__text-wrapper{
         width: 430px;
+    }
+    @media (max-width:320px){
+        &__text-wrapper {
+            width: 270px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
     }
     &__title{
         font-family: Georgia, 'Times New Roman', Times, serif;
@@ -21,6 +36,14 @@ $styles: about;
         letter-spacing: 0.06em;
         line-height: 103%;
     }
+    @media (max-width:320px){
+        &__title {
+            width: 300px;
+            font-size: $H500;
+            text-align: center;
+
+        }
+    }
     &__subtitle{
         font-family: Georgia, 'Times New Roman', Times, serif;
         font-size: $H600;
@@ -29,6 +52,13 @@ $styles: about;
         margin-bottom: 25px;
         letter-spacing: 0.06em;
         
+    }
+    @media (max-width:320px){
+        &__subtitle {
+            width: 300px;
+            font-size: $H500;
+            text-align: center;
+        }
     }
     &__subtitle::before,
     &__subtitle::after {
@@ -49,6 +79,23 @@ $styles: about;
     &__text-top{
         margin-bottom: 25px;
     }
-   
-    &__text-bottom{}
+    @media (max-width:320px){
+        &__text-top {
+            text-align: justify;
+            margin-bottom: 22px;
+        }
+    }
+    @media (max-width:320px){
+        &__text-bottom{
+            text-align: justify;
+            margin-bottom: 42px;
+        }
+    }
+}
+@media (max-width:320px){
+    .about{
+        flex-direction: column-reverse;
+        padding-top: 42px;
+        padding-bottom: 42px;
+    }
 }

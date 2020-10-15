@@ -15,13 +15,37 @@ padding-top: 60px;
     line-height: 130%;
     margin-bottom: 42px;
 }
+@media (max-width: 320px){
+    &__title {
+        font-size: $H520;
+        letter-spacing: 0.06em; 
+        width: 250px; 
+        text-align: center;
+    }
+}
+
 &__content {
     @include flex (center, flex-start, row);
+}
+@media (max-width: 320px){
+    &__content {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 }
 &__content__text-wrapper{
     @include flex (center, flex-start, column);  
     margin-right: 42px;
     padding-top: 165px;
+}
+@media (max-width:320px){
+    &__content__text-wrapper{
+        @include flex (center, center, column);  
+        margin-right: 0px;
+        padding-top: 0px;
+
+    }  
 }
 &__text {
     width: 460px;
@@ -33,6 +57,12 @@ padding-top: 60px;
     line-height: 160%;
     margin-bottom: 41px; 
 }
+@media (max-width: 320px){
+    &__text {
+        width: 300px;
+        text-align: center;
+    }
+}
 &__button{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: $H200;
@@ -43,7 +73,24 @@ padding-top: 60px;
     background-color: $button-background-color;
     border-radius: 300px;
 }
+@media (max-width:320px){
+    &__button {
+        margin-bottom: 105px;
+    }
+}
 &__button:hover{
     background-color: $backgroun-addition-card-hover-color;
 }
+@media (max-width: 320px){
+    &__image {
+        width: 260px;
+        height: 271px;
+    }
+}
+}
+@media (max-width: 320px){
+    .not-only{
+        background: url(..//../img/start-screen-background320.jpg) no-repeat;
+        padding-top: 30px;
+    }
 }
