@@ -8,8 +8,20 @@ $styles: addition;
         margin-right: 30px;
         padding-bottom: 6px ;
     }
+    @media (max-width:320px) {
+        &__img {
+            width: 260px;
+            height: 135px ;
+            margin-right: 0px;
+        } 
+    }
     &__text-wrapper{
         @include flex(center, flex-start, column);
+    }
+    @media (max-width:320px) {
+        &__text-wrapper {
+            @include flex(center, center, column); 
+        } 
     }
     &__title{
         width: 308px;
@@ -21,6 +33,12 @@ $styles: addition;
         margin-bottom: 20px;
         letter-spacing: 0.06em;
     }
+    @media (max-width: 320px) {
+        &__title {
+            font-size: $H500;
+            text-align: center;
+        }
+    }
     &__subtitle{
         font-family: Georgia, 'Times New Roman', Times, serif;
         font-size: $H100;
@@ -29,6 +47,12 @@ $styles: addition;
         line-height: 130%;
         margin-bottom: 20px;
         letter-spacing: 0.06em;
+    }
+    @media (max-width: 320px) {
+        &__subtitle {
+            font-size: $H100;
+            text-align: center;
+        }
     }
     &__card-number{
         @include flex (center, center, row);
@@ -52,15 +76,34 @@ $styles: addition;
         line-height: 130%;
         letter-spacing: 0.06em;
     }
-    
+    @media (max-width: 320px) {
+        &__number {
+            font-size: $H100;
+
+        }
+    }
     &__text{
         width: 380px;
         font-family:Arial, Helvetica, sans-serif;
-        font-size: 12px;
+        font-size: $H20;
         font-weight: normal;
         font-style: italic;
         color:$text-addition-text-color;
         line-height: 18px;
         
+    }
+    @media (max-width: 320px) {
+        &__text {
+            text-align: justify;
+            width: 280px;
+            margin-bottom: 42px;
+        }
+    }
+}
+@media (max-width: 320px) {
+    .addition {
+        @include flex (center, center, column-reverse);
+        padding-top: 42px;
+        padding-bottom: 42px;
     }
 }
