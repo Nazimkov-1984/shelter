@@ -18,20 +18,11 @@
     display: flex;
     justify-content: center;
   }
+@media (width: 1280px){
 .container {
   width: 1280px;
   display: flex;
   flex-direction: column;
  justify-content: center;
-
-}
-@media (max-width: 320px){
-  .container{
-    width: 320px;
-  }
-}
-@media (max-width: 768px){
-  .container{
-    width: 768px;
   }
 }

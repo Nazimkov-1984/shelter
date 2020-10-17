@@ -27,6 +27,12 @@ padding-top: 60px;
 &__content {
     @include flex (center, flex-start, row);
 }
+@media (min-width: 768px) and (max-width: 1279px) {
+    &__content{
+        
+        justify-content: space-around;
+    }  
+}
 @media (max-width: 320px){
     &__content {
         flex-direction: column;
@@ -34,9 +40,14 @@ padding-top: 60px;
         justify-content: center;
     }
 }
-@media (max-width: 768px){
+@media (min-width: 321px) and (max-width: 768px){
     &__content {
         @include flex(center, center, column);  
+    }
+}
+@media (min-width: 768px) and (max-width: 1279px){
+    &__content {
+       align-items: space-around;
     }
 }
 &__content__text-wrapper{
@@ -51,11 +62,18 @@ padding-top: 60px;
         padding-top: 0px;
     }  
 }
-@media (max-width:768px){
+@media (min-width: 321px) and (max-width: 768px) {
     &__content__text-wrapper{
         @include flex (center, flex-start, column);  
         margin-right: 0px;
         padding-top: 0px;
+    }  
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+    &__content__text-wrapper{
+        margin-right: 0px; 
+        padding-top: 0px;
+        align-items: center; 
     }  
 }
 &__text {
@@ -74,6 +92,12 @@ padding-top: 60px;
         text-align: center;
     }
 }
+@media (min-width: 768px) and (max-width: 1279px) {
+    &__text {
+        width: 70%;
+    }
+}
+
 &__button{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: $H200;
@@ -89,7 +113,7 @@ padding-top: 60px;
         margin-bottom: 105px;
     }
 }
-@media (max-width:768px){
+@media (min-width: 321px) and (max-width: 768px){
     &__button {
         align-self: center;
         margin-bottom: 100px;
@@ -98,13 +122,17 @@ padding-top: 60px;
 &__button:hover{
     background-color: $backgroun-addition-card-hover-color;
 }
+&__image-wrapper {
+    width: 100%;
+    max-width: 698px;
+}
 @media (max-width: 320px){
     &__image {
         width: 260px;
         height: 271px;
     }
 }
-@media (max-width: 768px){
+@media (min-width: 321px) and (max-width: 768px){
     &__image {
         width: 569px;
         height: 593px;
@@ -112,16 +140,26 @@ padding-top: 60px;
         left: 60px;
     }
 }
+@media (min-width: 768px) and (max-width: 1279px){
+    &__image {
+        width: 100%;
+        height: auto;
+    }
+}
 }// end & 
 @media (max-width: 320px){
-    .not-only{
-        background: url(..//..//img/start-screen-gradient-background320.png) no-repeat;
+    .not-only {
+        background: url(..//../img/start-screen-gradient-background320.png) no-repeat;
+        background-position: center center;
+        background-size: cover;
         padding-top: 30px;
     }
 }
-@media (max-width: 768px){
+@media (min-width: 321px) and (max-width: 768px){
     .not-only{
-        background: url(..//..//img/start-screen-gradient-background768.png) no-repeat;
+        background: url(..//../img/start-screen-gradient-background768.png) no-repeat;
+        background-position: center center;
+        background-size: cover;
         padding-top: 30px;
     }
 }
