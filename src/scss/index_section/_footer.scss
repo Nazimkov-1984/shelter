@@ -10,6 +10,13 @@ $styles: footer;
         margin-right: 161px;
         padding-top: 14px;
     }
+    @media (max-width:320px) {
+        &__left-column {
+            margin-right: 0px;
+            padding-top: 0px;
+            @include flex (center, center, column);
+        }
+    }
     &__left-column__title{
         font-family: Georgia, 'Times New Roman', Times, serif;
         font-size: $H600;
@@ -19,6 +26,12 @@ $styles: footer;
         margin-bottom: 40px;
         letter-spacing: 0.06em;
         width: 280px;
+    }
+    @media (max-width: 320px) {
+        &__left-column__title{
+            font-size: $H500;
+            text-align: center;
+        }
     }
     &__left-column__email{
         @include flex (flex-start, center, row);
@@ -39,6 +52,11 @@ $styles: footer;
     &__left-column__telephone{
         @include flex (flex-start, center, row);
     }
+    @media (max-width: 320px) {
+        &__left-column__telephone {
+            margin-bottom: 40px;
+        }
+    }
     &__left-column__telephone__icon {
         margin-right: 20px; 
     }
@@ -55,6 +73,14 @@ $styles: footer;
         margin-right: 160px;
         padding-top: 14px;
     }
+    @media (max-width:320px) {
+        &__right-column {
+            margin-right: 0px;
+            padding-top: 0px;
+            @include flex (center, center, column);
+            margin-bottom: 40px;
+        }
+    }
     &__right-column__title{
         font-family: Georgia, 'Times New Roman', Times, serif;
         font-size: $H600;
@@ -64,6 +90,12 @@ $styles: footer;
         margin-bottom: 34px;
         letter-spacing: 0.06em;
         width: 270px;
+    }
+    @media (max-width: 320px) {
+        &__right-column__title {
+            font-size: $H500; 
+            text-align: center;
+        }
     }
     &__right-column__first-adress{
         @include flex (flex-start, center, row);
@@ -96,8 +128,27 @@ $styles: footer;
         line-height: 115%;
         letter-spacing: 0.06em;
     }
+    @media (max-width: 320px){
+        &__left-column__second-adress {
+            align-self: flex-start;
+        }
+    }
     &__img{
         align-self: flex-start;
     }
+    @media (max-width:320px) {
+        &__img {
+            width: 260px;
+            height: 269px;
+            align-self: center;
+        }
+    }
 
+}// end of & 
+
+@media (max-width: 320px) {
+    .footer {
+        @include flex (center, center, column);
+        padding-top: 30px;
+    }
 }
