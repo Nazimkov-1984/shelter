@@ -34,6 +34,11 @@ padding-top: 60px;
         justify-content: center;
     }
 }
+@media (max-width: 768px){
+    &__content {
+        @include flex(center, center, column);  
+    }
+}
 &__content__text-wrapper{
     @include flex (center, flex-start, column);  
     margin-right: 42px;
@@ -44,7 +49,13 @@ padding-top: 60px;
         @include flex (center, center, column);  
         margin-right: 0px;
         padding-top: 0px;
-
+    }  
+}
+@media (max-width:768px){
+    &__content__text-wrapper{
+        @include flex (center, flex-start, column);  
+        margin-right: 0px;
+        padding-top: 0px;
     }  
 }
 &__text {
@@ -78,6 +89,12 @@ padding-top: 60px;
         margin-bottom: 105px;
     }
 }
+@media (max-width:768px){
+    &__button {
+        align-self: center;
+        margin-bottom: 100px;
+    }
+}
 &__button:hover{
     background-color: $backgroun-addition-card-hover-color;
 }
@@ -87,10 +104,24 @@ padding-top: 60px;
         height: 271px;
     }
 }
+@media (max-width: 768px){
+    &__image {
+        width: 569px;
+        height: 593px;
+        position: relative;
+        left: 60px;
+    }
 }
+}// end & 
 @media (max-width: 320px){
     .not-only{
-        background: url(..//../img/start-screen-background320.jpg) no-repeat;
+        background: url(..//..//img/start-screen-gradient-background320.png) no-repeat;
+        padding-top: 30px;
+    }
+}
+@media (max-width: 768px){
+    .not-only{
+        background: url(..//..//img/start-screen-gradient-background768.png) no-repeat;
         padding-top: 30px;
     }
 }

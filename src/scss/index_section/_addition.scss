@@ -15,12 +15,23 @@ $styles: addition;
             margin-right: 0px;
         } 
     }
+    @media (max-width:768px) {
+        &__img {
+            padding-bottom: 0px;
+            margin-right: 0px;
+        } 
+    }
     &__text-wrapper{
         @include flex(center, flex-start, column);
     }
     @media (max-width:320px) {
         &__text-wrapper {
             @include flex(center, center, column); 
+        } 
+    }
+    @media (max-width:768px) {
+        &__text-wrapper {
+            margin-bottom: 60px;
         } 
     }
     &__title{
@@ -99,11 +110,16 @@ $styles: addition;
             margin-bottom: 42px;
         }
     }
-}
+}// end & 
 @media (max-width: 320px) {
     .addition {
         @include flex (center, center, column-reverse);
         padding-top: 42px;
         padding-bottom: 42px;
+    }
+}
+@media (max-width: 768px) {
+    .addition {
+        @include flex (center, center, column-reverse);
     }
 }

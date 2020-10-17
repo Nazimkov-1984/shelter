@@ -14,6 +14,11 @@ $styles: about;
             width: 260px;
         }
     }
+    @media (max-width:768px){
+        &__img {
+            margin-right: 0px;
+        }
+    }
     &__text-wrapper{
         width: 430px;
     }
@@ -91,11 +96,22 @@ $styles: about;
             margin-bottom: 42px;
         }
     }
-}
+    @media (max-width:768px){
+        &__text-bottom{
+            text-align: justify;
+            margin-bottom: 80px;
+        }
+    }
+}// end & 
 @media (max-width:320px){
     .about{
         flex-direction: column-reverse;
         padding-top: 42px;
         padding-bottom: 42px;
+    }
+}
+@media (max-width:768px){
+    .about{
+        flex-direction: column-reverse;
     }
 }

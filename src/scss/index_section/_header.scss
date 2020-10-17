@@ -14,6 +14,11 @@ margin-bottom: 60px;
         margin-right: 43px;
     }
 }
+@media (max-width: 768px){
+    &__logo {
+        margin-right: 81px;
+    }
+}
 &__logo__title {
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;

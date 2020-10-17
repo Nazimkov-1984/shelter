@@ -6,6 +6,12 @@ $styles: footer;
     background-size: cover;
     padding-top: 40px;
     
+    @media (max-width:768px){
+        &__text {
+            @include flex (center, center, row);
+            margin-bottom: 65px;
+        }
+    }
     &__left-column{
         margin-right: 161px;
         padding-top: 14px;
@@ -15,6 +21,11 @@ $styles: footer;
             margin-right: 0px;
             padding-top: 0px;
             @include flex (center, center, column);
+        }
+    }
+    @media (max-width:768px) {
+        &__left-column {
+            margin-right: 60px;
         }
     }
     &__left-column__title{
@@ -81,6 +92,11 @@ $styles: footer;
             margin-bottom: 40px;
         }
     }
+    @media (max-width:768px) {
+        &__right-column {
+            margin-right: 0px;
+        }
+    }
     &__right-column__title{
         font-family: Georgia, 'Times New Roman', Times, serif;
         font-size: $H600;
@@ -143,10 +159,21 @@ $styles: footer;
             align-self: center;
         }
     }
-
+    @media (max-width:768px) {
+        &__img {
+            height: 310px;
+            align-self: center;
+        }
+    }
 }// end of & 
 
 @media (max-width: 320px) {
+    .footer {
+        @include flex (center, center, column);
+        padding-top: 30px;
+    }
+}
+@media (max-width: 768px) {
     .footer {
         @include flex (center, center, column);
         padding-top: 30px;
