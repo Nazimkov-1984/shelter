@@ -61,6 +61,7 @@ margin-bottom: 60px;
 @media (max-width: 320px){
     &__nav {
         display: none;
+        
     }
 }
 @media (min-width: 321px) and (max-width: 768px){
@@ -68,8 +69,17 @@ margin-bottom: 60px;
         display: none;
     }
 }
+
+&__nav--for_mobile{ // FOR MOBILE MENU 
+    @include flex (center, center, column);
+    padding-top: 158px;
+} 
 &__nav__item{
     margin-right: 30px;
+}
+&__nav--for_mobile__item { // FOR MOBILE MENU 
+    margin-right: 0px;
+    margin-bottom: 40px;
 }
 &__nav__item:last-child{
     margin-right: 0px;
@@ -83,6 +93,9 @@ margin-bottom: 60px;
     padding-bottom: 4px;
     line-height: 160%;
 }
+&__nav--for_mobile__item__link { //FOR MOBILE MENU 
+    font-size: $H550;
+}
 &__nav__item__link:hover{
     border-bottom: 3px solid $border-nav-color;
 }
@@ -92,7 +105,8 @@ border-bottom: 3px solid $border-nav-color;
 }// end &
 @media (max-width: 320px){
     .header {
-       margin-bottom: 0px;
+       margin-bottom: 60px;
+       flex-wrap: wrap;
     }
 }
 @media (min-width: 768px) and (max-width: 1279px){
