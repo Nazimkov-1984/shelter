@@ -1,5 +1,7 @@
 $styles: modal;
 .#{$styles}{
+    min-height: 100vh;
+    @include flex (center, center, column);
 &__btn-close{
     @include flex (center, center, row);
     width: 52px;
@@ -8,6 +10,8 @@ $styles: modal;
     border-radius: 100px;
     padding: 23px 19px 21px 17px;
     transition: all .8s;
+    position: relative;
+    left: 445px;
 }
 &__btn-close:hover {
     background-color: $arrow-bacground-color-hover;
@@ -15,13 +19,17 @@ $styles: modal;
 }
 &__content{
     @include flex (center, center, row);
+    border: 1px solid red;
+    border-radius: 10px;
 }
 &__img{
     margin-right: 29px;
+    width: 500px;
+    height: 500px;
 }
 
 &__text-wrapper{
-    @include flex (center, center, column);
+    @include flex (center, flex-start, column);
 }
 &__title, &__subtitle, &__text, &__list-about__key, &_list-about__value {
     color: $modal-text-color;
@@ -46,6 +54,7 @@ letter-spacing: 0.06em;
 margin-bottom: 40px;
 }
 &__text{
+    width: 350px;
 font-family: Georgia;
 font-style: normal;
 font-weight: normal;
@@ -54,7 +63,7 @@ letter-spacing: 0.06em;
 margin-bottom: 40px;
 }
 &__list-about{
-    @include flex (center, center, column);
+    @include flex (center, flex-start, column);
 }
 &__list-about__item{
     margin-bottom: 10px;

@@ -1,31 +1,19 @@
-const burgerButton = document.querySelector ('.header__burger');
-const content = document.querySelector ('.not-only__content');
-const menu = document.querySelector ('.header__nav');
-const menuItem = document.querySelectorAll ('.header__nav__item');
-const menuItemLink = document.querySelectorAll ('.header__nav__item__link');
+import modalWindow from 'modal.js';
+import burgerMenu from 'burger.js';
 
-burgerButton.addEventListener ('click', () => {
-    
-    const contentStyle = window.getComputedStyle(content, null);
-    if (contentStyle.display === 'none') {
-        content.style.display = 'flex';
-    } else {
-        content.style.display = 'none';
+burgerMenu();
+
+// MODAL WINDOW
+fetch('../pets.json')
+.then(data => data.json())
+.then (res => {
+    let y = '';
+    for (let i = 0; i< res.length; i++) {
+        y = y + res[i].name;
     }
-    menu.classList.toggle ('header__nav--for_mobile');
-    menuItem.forEach (item =>{
-        item.classList.toggle('header__nav--for_mobile__item');
-    });
-    menuItemLink.forEach (item =>{
-        item.classList.toggle ('header__nav--for_mobile__item__link');
-    });
+    console.log (y);
+})
 
-    const burgerButtonStyle = window.getComputedStyle(burgerButton, null);
 
-    if (burgerButtonStyle.transform === 'none') {
-        burgerButton.style.transform = 'rotate(90deg)';
-    } else {
-        burgerButton.style.transform = 'none';
-    }
-    
-});
+
+modalWindow();
