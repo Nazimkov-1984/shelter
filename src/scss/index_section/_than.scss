@@ -27,6 +27,12 @@ $styles: than;
     &__list-top, &__list-bottom{
         @include flex (center, center, row);
     }
+    @media (min-width: 768px) and (max-width: 1279px) {
+        &__list-top, &__list-bottom {
+            width: 100%;
+           justify-content: space-around;
+        }
+    }
     @media (max-width: 320px) {
         &__list-top, &__list-bottom {
             display: none;
@@ -57,6 +63,16 @@ $styles: than;
     &__list-top__items, &__list-bottom__items {
         @include flex (center, center, column);
         margin-right: 120px;
+    }
+    @media (min-width: 768px) and (max-width: 1279px) {
+        &__list-top__items {
+           margin-right: 0px;
+        }
+    }
+    @media (min-width: 768px) and (max-width: 1279px) {
+        &__list-bottom__items {
+           margin-right: 0px;
+        }
     }
     @media (max-width: 320px) {
         &__list__items {

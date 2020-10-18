@@ -27,6 +27,7 @@ padding-top: 60px;
 &__content {
     @include flex (center, flex-start, row);
 }
+
 @media (min-width: 768px) and (max-width: 1279px) {
     &__content{
         
@@ -126,18 +127,36 @@ padding-top: 60px;
     width: 100%;
     max-width: 698px;
 }
+@media (max-width: 320px) {
+    &__image-wrapper {
+        @include flex (center, center, row);
+    }
+}
+@media (width:768px) {
+    &__image-wrapper {
+        width: 100%;
+        max-width: 569px; 
+    }
+}
+
 @media (max-width: 320px){
     &__image {
         width: 260px;
         height: 271px;
     }
 }
-@media (min-width: 321px) and (max-width: 768px){
+@media (width: 768px){
     &__image {
-        width: 569px;
-        height: 593px;
+        width: 100%;
+        height: auto;
         position: relative;
-        left: 60px;
+        left: 90px;
+    }
+}
+@media (min-width: 321px) and (max-width: 769px){
+    &__image{
+        width: 100%;
+        height: auto;
     }
 }
 @media (min-width: 768px) and (max-width: 1279px){
@@ -155,7 +174,7 @@ padding-top: 60px;
         padding-top: 30px;
     }
 }
-@media (min-width: 321px) and (max-width: 768px){
+@media (width: 768px){
     .not-only{
         background: url(..//../img/start-screen-gradient-background768.png) no-repeat;
         background-position: center center;

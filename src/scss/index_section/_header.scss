@@ -19,7 +19,7 @@ margin-bottom: 60px;
         margin-right: 43px;
     }
 }
-@media (min-width: 321px) and (max-width: 768px){
+@media (min-width: 321px) and (max-width: 768px)  {
     &__logo {
         margin-right: 81px;
     }
@@ -50,8 +50,23 @@ margin-bottom: 60px;
         display: block;
     } 
 }
+@media (min-width: 321px) and (max-width: 768px){
+    &__burger {
+        display: block;
+    }
+}
 &__nav{
     @include flex (center, center, row);    
+}
+@media (max-width: 320px){
+    &__nav {
+        display: none;
+    }
+}
+@media (min-width: 321px) and (max-width: 768px){
+    &__nav {
+        display: none;
+    }
 }
 &__nav__item{
     margin-right: 30px;
@@ -74,17 +89,11 @@ margin-bottom: 60px;
 &__nav__item__link--active {
 border-bottom: 3px solid $border-nav-color;
 }
-@media (max-width: 320px){
-    &__nav {
-        display: none;
-    }
-}
-
+}// end &
 @media (max-width: 320px){
     .header {
        margin-bottom: 0px;
     }
-}
 }
 @media (min-width: 768px) and (max-width: 1279px){
     .header {
