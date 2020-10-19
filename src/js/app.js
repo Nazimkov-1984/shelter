@@ -1,5 +1,7 @@
-import modalWindow from 'modal.js';
-import burgerMenu from 'burger.js';
+import modalWindow from './modal.js';
+import burgerMenu from './burger.js';
+import slider from "./slider.js";
+import showModal from './showModal';
 
 burgerMenu();
 
@@ -12,8 +14,9 @@ fetch('../pets.json')
         y = y + res[i].name;
     }
     console.log (y);
-})
+});
 
 
 
 modalWindow();
+showModal();
