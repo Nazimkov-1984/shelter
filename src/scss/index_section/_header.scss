@@ -1,0 +1,117 @@
+$styles: header;
+.#{$styles} {
+@include flex (center, center, row);
+margin-bottom: 60px;
+&__title{
+    display:none;
+}
+&__logo {
+    @include flex (center, flex-start, column);
+    margin-right: 570px;  
+}
+@media (min-width: 768px) and (max-width: 1279px){
+    &__logo {
+        margin-right: 0px;
+    }
+}
+@media (max-width: 320px){
+    &__logo {
+        margin-right: 43px;
+    }
+}
+@media (min-width: 321px) and (max-width: 768px)  {
+    &__logo {
+        margin-right: 81px;
+    }
+}
+&__logo__title {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-size: $H550;
+    font-weight: 400;
+    color: $text-logo-main;
+    margin-bottom: 10px;
+    letter-spacing: 0.06em;
+}
+&__logo__subtitle {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: $H50;
+    font-weight: 400;
+    color: $text-main-color;
+    letter-spacing: 0.1em; 
+    text-align: center;
+}
+&__burger {
+    display: none;
+}
+@media (max-width:320px){
+    &__burger {
+        display: block;
+    } 
+}
+@media (min-width: 321px) and (max-width: 768px){
+    &__burger {
+        display: block;
+    }
+}
+&__nav{
+    @include flex (center, center, row);    
+}
+@media (max-width: 320px){
+    &__nav {
+        display: none;
+        
+    }
+}
+@media (min-width: 321px) and (max-width: 768px){
+    &__nav {
+        display: none;
+    }
+}
+
+&__nav--for_mobile{ // FOR MOBILE MENU 
+    @include flex (center, center, column);
+    padding-top: 158px;
+} 
+&__nav__item{
+    margin-right: 30px;
+}
+&__nav--for_mobile__item { // FOR MOBILE MENU 
+    margin-right: 0px;
+    margin-bottom: 40px;
+}
+&__nav__item:last-child{
+    margin-right: 0px;
+}
+&__nav__item__link{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: $H100;
+    font-weight: normal;
+    font-style: normal;
+    color: $text-main-color;   
+    padding-bottom: 4px;
+    line-height: 160%;
+}
+&__nav--for_mobile__item__link { //FOR MOBILE MENU 
+    font-size: $H550;
+}
+&__nav__item__link:hover{
+    border-bottom: 3px solid $border-nav-color;
+}
+&__nav__item__link--active {
+border-bottom: 3px solid $border-nav-color;
+}
+}// end &
+@media (max-width: 320px){
+    .header {
+       margin-bottom: 60px;
+       flex-wrap: wrap;
+    }
+}
+@media (min-width: 768px) and (max-width: 1279px){
+    .header {
+        width: 100%;
+        justify-content: space-around;
+    }
+}

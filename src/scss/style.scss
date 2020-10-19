@@ -1,11 +1,13 @@
 @import "vars";
 @import "mixins";
 @import "common";
-@import "header";
-@import "main-screen";
-@import "about";
-@import "our-friends";
-@import "than";
-@import "addition";
-@import "footer"
+@import "./index_section/header";
+@import "./index_section/main-screen";
+@import "./index_section/about";
+@import "./index_section/our-friends";
+@import "./index_section/than";
+@import "./index_section/addition";
+@import "./index_section/footer";
+@import "./pages/pets";
+@import "./index_section/modal"
 

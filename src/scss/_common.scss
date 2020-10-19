@@ -15,8 +15,31 @@
   }
   html, body {
     scroll-behavior: smooth;
+    display: flex;
+    justify-content: center;
   }
+@media (width: 1280px){
 .container {
-  width: 1920px;
-  @include flex (center, center, column);
+  width: 1280px;
+  display: flex;
+  flex-direction: column;
+ justify-content: center;
+  }
 }
+@media (width: 320px){
+  .container {
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+    }
+  }
+  @media (width: 768px){
+    .container {
+      width: 768px;
+      display: flex;
+      flex-direction: column;
+     justify-content: center;
+      }
+    }
+    

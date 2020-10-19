@@ -1,0 +1,91 @@
+$styles: modal;
+.#{$styles}{
+    min-height: 100vh;
+    @include flex (center, center, column);
+&__btn-close{
+    @include flex (center, center, row);
+    width: 52px;
+    height: 52px;
+    border: 2px solid $border-our-friends-border-color;
+    border-radius: 100px;
+    padding: 23px 19px 21px 17px;
+    transition: all .8s;
+    position: relative;
+    left: 445px;
+}
+&__btn-close:hover {
+    background-color: $arrow-bacground-color-hover;
+    cursor: pointer;
+}
+&__content{
+    @include flex (center, center, row);
+    border: 1px solid red;
+    border-radius: 10px;
+}
+&__img{
+    margin-right: 29px;
+    width: 500px;
+    height: 500px;
+}
+
+&__text-wrapper{
+    @include flex (center, flex-start, column);
+}
+&__title, &__subtitle, &__text, &__list-about__key, &_list-about__value {
+    color: $modal-text-color;
+}
+&__title{
+    font-family: Georgia;
+font-style: normal;
+font-weight: normal;
+font-size: $H600;
+line-height: 130%;
+letter-spacing: 0.06em;
+margin-bottom: 10px;
+
+}
+&__subtitle{
+font-family: Georgia;
+font-style: normal;
+font-weight: normal;
+font-size: $H300;
+line-height: 115%;
+letter-spacing: 0.06em;
+margin-bottom: 40px;
+}
+&__text{
+    width: 350px;
+font-family: Georgia;
+font-style: normal;
+font-weight: normal;
+font-size: $H100;
+letter-spacing: 0.06em;
+margin-bottom: 40px;
+}
+&__list-about{
+    @include flex (center, flex-start, column);
+}
+&__list-about__item{
+    margin-bottom: 10px;
+}
+&__list-about__item:last-child{
+    margin-bottom: 0px;
+}
+&__list-about__key{
+font-family: Georgia;
+font-style: normal;
+font-weight: bold;
+font-size: $H100;
+line-height: 110%;
+letter-spacing: 0.06em;
+}
+&_list-about__value{
+font-family: Georgia;
+font-style: normal;
+font-weight: normal;
+font-size: $H100;
+line-height: 110%;
+letter-spacing: 0.06em;
+}
+
+}// end &

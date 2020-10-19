@@ -1,0 +1,273 @@
+
+$styles: pets-header;
+.#{$styles} {
+
+position: sticky;
+top: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: row;
+padding-top: 30px;
+padding-bottom: 30px;
+background-color: $text-main-color;
+&__title{
+    display:none;
+}
+&__logo {
+    @include flex (center, flex-start, column);
+    margin-right: 570px;  
+}
+&__logo__title {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-size: $H550;
+    font-weight: 400;
+    color: $pets-logo-color;
+    margin-bottom: 10px;
+    letter-spacing: 0.06em;
+}
+&__logo__subtitle {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: $H50;
+    font-weight: 400;
+    color: $pets-logo-dark;
+    letter-spacing: 0.1em; 
+    text-align: center;
+}
+&__nav{
+    @include flex (center, center, row);    
+}
+&__nav__item{
+    margin-right: 30px;
+}
+&__nav__item:last-child{
+    margin-right: 0px;
+}
+&__nav__item__link{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: $H100;
+    font-weight: normal;
+    font-style: normal;
+    color: $pets-logo-color;   
+    padding-bottom: 4px;
+    line-height: 160%;
+}
+&__nav__item__link:hover{
+    border-bottom: 3px solid $border-nav-color;
+}
+&__nav__item__link--active {
+border-bottom: 3px solid $border-nav-color;
+}
+
+} // end header
+
+$styles: pets-footer;
+.#{$styles}{
+    @include flex (center, flex-start, row);
+    background: url(../img/footer-background.png) no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding-top: 40px;
+    
+    &__left-column{
+        margin-right: 161px;
+        padding-top: 14px;
+    }
+    &__left-column__title{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: $H600;
+        font-weight: normal;
+        color:$text-main-color;
+        line-height: 130%;
+        margin-bottom: 40px;
+        letter-spacing: 0.06em;
+        width: 280px;
+    }
+    &__left-column__email{
+        @include flex (flex-start, center, row);
+        margin-bottom: 40px;
+    }
+    &__left-column__email__icon{
+        margin-right: 20px;
+        
+    }
+    &__left-column__email__link{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: $H300;
+        font-weight: 400;
+        color: $text-email-footer;
+        line-height: 115%;
+        letter-spacing: 0.06em;
+    }
+    &__left-column__telephone{
+        @include flex (flex-start, center, row);
+    }
+    &__left-column__telephone__icon {
+        margin-right: 20px; 
+    }
+    &__left-column__telephone__link{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: $H300;
+        font-weight: 400;
+        color: $text-email-footer;
+        line-height: 115%;
+        letter-spacing: 0.06em;
+    }
+
+    &__right-column{
+        margin-right: 160px;
+        padding-top: 14px;
+    }
+    &__right-column__title{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: $H600;
+        font-weight: normal;
+        color:$text-main-color;
+        line-height: 130%;
+        margin-bottom: 34px;
+        letter-spacing: 0.06em;
+        width: 270px;
+    }
+    &__right-column__first-adress{
+        @include flex (flex-start, center, row);
+        margin-bottom: 34px;
+    }
+    &__right-column__first-adress__icon{
+        margin-right: 20px; 
+    }
+    &__right-column__first-adress__link {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: $H300;
+        font-weight: normal;
+        color: $text-email-footer;
+        line-height: 115%;
+        letter-spacing: 0.06em;
+        width: 264px;  
+        font-style: normal;
+    }
+    &__left-column__second-adress{
+        @include flex (flex-start, center, row);
+    }
+    &__right-column__second-adress__icon{
+        margin-right: 20px; 
+    }
+    &__right-column__second-adress__link{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: $H300;
+        font-weight: 400;
+        color: $text-email-footer;
+        line-height: 115%;
+        letter-spacing: 0.06em;
+    }
+    &__img{
+        align-self: flex-start;
+    }
+
+} // end footer
+$styles: pets-our-friends;
+.#{$styles}{
+    @include flex (center, center, column);
+    background-color: #F6F6F6;
+    padding-top: 80px;
+    padding-bottom: 100px;
+
+    
+    &__title{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: $H600;
+        font-weight: 400;
+        color: $text-our-friends-title-color;
+        margin-bottom: 60px;
+        line-height: 130%;
+        width: 400px;
+        text-align: center;
+        letter-spacing: 0.06em;
+    }
+    &__slider-top{
+        @include flex (center, center, row);
+        margin-bottom: 30px;
+    }
+    &__slider-bottom {
+        @include flex (center, center, row); 
+        margin-bottom: 45px;
+    }
+    &__slider-top__list, &__slider-bottom__list{
+        @include flex (center, center, row);
+    }
+    &__slider-top__list__items, &__slider-bottom__list__items {
+        @include flex (center, center, column);
+        margin-right: 40px;
+        transition: all .7s;
+        padding-bottom: 30px;
+    }
+    &__slider-top__list__items:hover, &__slider-bottom__list__items:hover{
+        cursor: pointer;
+        background-color: #fff;
+        box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+    }
+    &__slider-top__list__items__img, &__slider-bottom__list__items__img{
+        margin-bottom: 30px;
+    }
+    &__slider-top__list__items__title, &__slider-bottom__list__items__title{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: $H300;
+        font-weight: 400;
+        color: $text-our-friends-title-color;
+        letter-spacing: 0.06em;
+        margin-bottom: 30px;
+    }
+    &__slider-top__list__items__button, &__slider-bottom__list__items__button{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: $H200;
+        font-weight: 400;
+        color: $button-text-color;
+        letter-spacing: 0.06em;
+        padding: 15px 45px;
+        border: 2px solid $border-our-friends-border-color;
+        border-radius: 300px;
+    }
+    &__slider-top__list__items__button:hover, &__slider-bottom__list__items__button:hover{
+        background-color: $button-bacground-color-hover;
+    }
+   &__pagination {
+       @include flex (center, center, row);
+   }
+   &__pagination__items{
+       margin-right: 20px;
+   }
+   &__pagination__item:last-child{
+    margin-right: 0px;
+   }
+   &__pagination__button:hover{
+       background-color: $pets-button-border-color ;
+       cursor: pointer;
+   }
+   &__pagination__button {
+       transition: all .7s;
+       width: 52px;
+       height: 52px;
+       border-radius: 50%;
+       font-family: Georgia, 'Times New Roman', Times, serif;
+       font-size: $H300;
+       font-weight: 400;
+       letter-spacing: 0.06em;
+       line-height: 115%;
+       text-align: center;
+
+   }
+   &__pagination__button--disabled-left {
+       border: 2px solid $pets-button-color;
+   }
+   &__pagination__button--number {
+       background-color: $pets-button-bg-color;
+       border: none;
+       color: $pets-button-dark;
+   }
+   &__pagination__button--right {
+    border: 2px solid $pets-button-border-color;
+    color: $pets-button-dark;
+
+}
+} // end our friend

@@ -10,37 +10,43 @@
 <body>
     <div class="container">
 
-    <main>
+    <main> 
         <section class="not-only">
-            <header class="header">
+           <header class="header">
                 <h1 class="header__title"> Cozy House</h1>
                 <div class="header__logo">
                     <span class="header__logo__title">Cozy House</span>
                     <span class="header__logo__subtitle">Shelter for pets in Boston</span>
                 </div>
+                <img src="./img/Burger.png" alt="burger" class="header__burger">
                 <nav>
                     <ul class="header__nav">
-                        <li class="header__nav__item"><a href="#about" class="header__nav__item__link header__nav__item__link--active">About the shelter</a></li>
-                        <li class="header__nav__item"><a href="#our_pets" class="header__nav__item__link">Our pets</a></li>
-                        <li class="header__nav__item"><a href="#than" class="header__nav__item__link">To help the shelter</a></li>
-                        <li class="header__nav__item"><a href="#footer" class="header__nav__item__link">Contacts</a></li>
+                        <li class="header__nav__item"><a href="#" class="header__nav__item__link header__nav__item__link--active" >About the shelter</a></li>
+                        <li class="header__nav__item"><a href="pets.html" class="header__nav__item__link" >Our pets</a></li>
+                        <li class="header__nav__item"><a href="#" class="header__nav__item__link" >To help the shelter</a></li>
+                        <li class="header__nav__item"><a href="#" class="header__nav__item__link" >Contacts</a></li>
                     </ul>
                 </nav>
-            </header>
+            </header> 
             <div class="not-only__content">
                 <div class="not-only__content__text-wrapper">
                     <h2 class="not-only__title">Not only people need a house</h2>
                     <p class="not-only__text">We offer to give a chance to a little and nice puppy with an extremely wide and open heart. He or she will love you more than anybody else in the world, you will see!</p>
-                    <a href="#" class="not-only__button">Make a friend</a>
+                    <a href="pets.html" class="not-only__button">Make a friend</a>
                 </div>
-               
-                <img src="./img/start-screen-puppy.png" alt="foto puppy">
+               <div class="not-only__image-wrapper">
+                <img class="not-only__image" src="./img/start-screen-puppy.png" alt="foto puppy">
+               </div>
+                
             </div>
             
-        </section>
+        </section>   
+
+
         <section class="about" id= "about">
-            
-            <img class="about__img" src="./img/about-pets.png" alt="dogs and cats">
+            <div class="about__image-wrapper">
+                <img class="about__img" src="./img/about-pets.png" alt="dogs and cats">
+            </div>
             <div class="about__text-wrapper">
                 <h2 class="about__title">About the shelter</h2>
                 <h2 class="about__subtitle">Cosy House</h2>
@@ -49,36 +55,37 @@
                 <p class="about__text-bottom">We feed our wards with the best food and make sure that they do not get sick, feel comfortable (including psychologically) and well. We are supported by 87 volunteers and 28 employees of various skill levels. About 12% of the animals are taken by the shelter staff. Taking care of the animals, they become attached to the pets and would hardly ever leave them alone.</p>
     
             </div>
-            
+        </section> 
 
-        </section>
-        <section class="our-friends" id="our_pets">
+
+        <section class="our-friends">
             <h2 class="our-friends__title">Our friends who<br> are looking for a house</h2>
-            <div class="our-friends__slider">
+           <div class="our-friends__slider">
                 <img class="our-friends__slider__button--left" src="./img/Arrow_left.png" alt="arrow left">
                 <ul class="our-friends__slider__list">
                     <li class="our-friends__slider__list__items">
-                        <img src="./img/katrine_photo.png" alt="Katrine cat" class="our-friends__slider__list__items__img">
+                        <img src="./img/pets-katrine.png" alt="Katrine cat" class="our-friends__slider__list__items__img">
                         <h3 class="our-friends__slider__list__items__title">Katrine</h3>
                         <a href="#" class="our-friends__slider__list__items__button">Learn more</a>
                     </li>
                     <li class="our-friends__slider__list__items">
-                        <img src="./img/jenifer__photo.png" alt="jenifer dog" class="our-friends__slider__list__items__img">
+                        <img src="./img/pets-jennifer.png" alt="jenifer dog" class="our-friends__slider__list__items__img">
                         <h3 class="our-friends__slider__list__items__title">Jennifer</h3>
                         <a href="#" class="our-friends__slider__list__items__button">Learn more</a>
                     </li>
                     <li class="our-friends__slider__list__items">
-                        <img src="./img/woody_photo.png" alt="woody dog" class="our-friends__slider__list__items__img">
+                        <img src="./img/pets-woody.png" alt="woody dog" class="our-friends__slider__list__items__img">
                         <h3 class="our-friends__slider__list__items__title">Woody</h3>
                         <a href="#" class="our-friends__slider__list__items__button">Learn more</a>
                     </li>
                 </ul>
                 <img class="our-friends__slider__button--right" src="./img/Arrow_right.png" alt="arrow right">
-            </div>
-        <a href="#" class="our-friends__button">Get to know the rest</a>
-        </section>
-        <section class="than" id="than">
-            <h2 class="than__title">Then you can help our shelter</h2>
+            </div> 
+        <a href="pets.html" class="our-friends__button">Get to know the rest</a>
+        </section> 
+        
+        <section class="than" id="than"> 
+            <h2 class="than__title">How you can help our shelter</h2>
             <ul class="than__list-top">
                 <li class="than__list-top__items">
                     <img src="./img/icon/icon-pet-food.png" alt="pet food" class="than__list__icon">
@@ -116,12 +123,55 @@
                 </li>
                 <li class="than__list-bottom__items">
                     <img src="./img/icon/icon-sleeping-area.png" alt=" pets sleeping area" class="than__list__icon">
-                    <span class="than__list__text">Sleeping area</span>
+                    <span class="than__list__text">Sleeping areas</span>
                 </li>
             </ul>
-        </section>
+            <ul class="than__list-mobile"> 
+                <li class="than__list__items">
+                    <img src="./img/icon/icon-pet-food.png" alt="pet food" class="than__list__icon">
+                    <span class="than__list__text">Pet food</span>
+                </li>
+                <li class="than__list__items">
+                    <img src="./img/icon/icon-transportation.png" alt="pets transportation" class="than__list__icon">
+                    <span class="than__list__text">Transportation</span>
+                </li>
+                <li class="than__list__items">
+                    <img src="./img/icon/icon-toys.png" alt="pet toys" class="than__list__icon">
+                    <span class="than__list__text">Toys</span>
+                </li>
+                <li class="than__list__items">
+                    <img src="./img/icon/icon-bowls-and-cups.png" alt="pets bowls and cups" class="than__list__icon">
+                    <span class="than__list__text">Bowls and cups</span>
+                </li>
+                <li class="than__list__items">
+                    <img src="./img/icon/icon-shampoos.png" alt="pets shampoos" class="than__list__icon">
+                    <span class="than__list__text">Shampoos</span>
+                </li>
+                <li class="than__list__items">
+                    <img src="./img/icon/icon-vitamins.png" alt=" pets vitamins" class="than__list__icon">
+                    <span class="than__list__text">Vitamins</span>
+                </li>
+                <li class="than__list__items">
+                    <img src="./img/icon/icon-medicines.png" alt="pets Medicines" class="than__list__icon">
+                    <span class="than__list__text">Medicines</span>
+                </li>
+                <li class="than__list__items">
+                    <img src="./img/icon/icon-collars-leashes.png" alt="pets collars leashes" class="than__list__icon">
+                    <span class="than__list__text">Collars / leashes</span>
+                </li>
+                <li class="than__list__items">
+                    <img src="./img/icon/icon-sleeping-area.png" alt=" pets sleeping area" class="than__list__icon">
+                    <span class="than__list__text">Sleeping areas</span>
+                </li>
+            </ul>
+        </section>   
+
+
         <section class="addition">
-            <img class="addition__img" src="./img/donation-dog.png" alt="dog" class="addition">
+            <div class="addition__image-wrapper">
+                <img class="addition__img" src="./img/donation-dog.png" alt="dog">
+            </div>
+            
             <div class="addition__text-wrapper">
                 <h2 class="addition__title">You can also make a donation</h2>
                 <p class="addition__subtitle">Name of the bank / Type of bank account</p>
@@ -133,9 +183,10 @@
                 <p class="addition__text">Legal information and lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a ipsum at libero sagittis dignissim sed ac diam. Praesent ultrices maximus tortor et vulputate. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
 
             </div>
-        </section>
-    </main>
+        </section>   
+    </main> 
     <footer class="footer" id="footer">
+    <div class="footer__text">
         <div class="footer__left-column">
             <h2 class="footer__left-column__title">For questions and suggestions</h2>
             <div class="footer__left-column__email">
@@ -146,7 +197,7 @@
                 <img src="./img/icon-phone.png" alt="icon phone" class="footer__left-column__telephone__icon">
                 <a href="tel:+13 674 567 75 54" class="footer__left-column__telephone__link">+13 674 567 75 54</a>
             </div>
-        </div>
+        </div> 
         <div class="footer__right-column">
             <h2 class="footer__right-column__title">We are waiting for your visit</h2>
             <div class="footer__right-column__first-adress">
@@ -158,9 +209,33 @@
                 <a href="https://www.google.com.ua/maps/@42.3089331,-71.085648,2002m/data=!3m1!1e3?hl=en" class="footer__right-column__second-adress__link" target="blank">18 South Park, London</a>
             </div>
         </div>
+    </div> 
+    <div class="footer__image-wrapper">
         <img src="./img/footer-puppy.png" alt="puppy" class="footer__img">
-    </footer>
-</div>
+    </div>
+        
+    </footer> 
+    <div class="modal">
+        <button class="modal__btn-close"><img src="./img/Vector.png" alt="cross"></button>
+        <div class="modal__content">
+            <div class="modal__image-wrapper">
+                <img src="" alt="foto puppy" class="modal__img">
+            </div>
+            <div class="modal__text-wrapper">
+                <h2 class="modal__title"></h2>
+                <p class="modal__subtitle"></p>
+                <p class="modal__text"></p>
+                <ul class="modal__list-about">
+                    <li class="modal__list-about__item"><span class="modal__list-about__age  modal__list-about__key">Age: </span><span class="modal__list-about__age__number modal__list-about__value"></span></li>
+                    <li class="modal__list-about__item"><span class="modal__list-about__inoculations modal__list-about__key">Inoculations: </span><span class="modal__list-about__inoculations__number modal__list-about__value"></span></li>
+                    <li class="modal__list-about__item"><span class="modal__list-about__diseases modal__list-about__key">Diseases: </span><span class="modal__list-about__diseases__number modal__list-about__value"></span></li>
+                    <li class="modal__list-about__item"><span class="modal__list-about__parasites modal__list-about__key">Parasites: </span><span class="modal__list-about__parasites__number modal__list-about__value"></span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</div> 
 	<script src="js/bundle.js"></script>
 </body>
 </html>

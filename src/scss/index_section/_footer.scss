@@ -1,0 +1,215 @@
+$styles: footer;
+.#{$styles}{
+    @include flex (center, flex-start, row);
+    background: url(../img/footer-background.png) no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding-top: 40px;
+    &__text {
+        @include flex (center, center, row);
+    }
+    @media (min-width: 321px) and (max-width: 768px){
+        &__text {
+            @include flex (center, center, row);
+            margin-bottom: 65px;
+        }
+    }
+    @media (max-width: 320px){
+        &__text {
+            @include flex (center, center, column);
+        }
+    }
+    @media (min-width: 780px) and (max-width: 1279px){
+        &__text {
+            flex-basis: 60%;
+            justify-content: space-between;
+        }
+    }
+    &__left-column{
+        margin-right: 161px;
+        padding-top: 14px;
+    }
+    @media (max-width:320px) {
+        &__left-column {
+            margin-right: 0px;
+            padding-top: 0px;
+            @include flex (center, center, column);
+        }
+    }
+    @media (min-width: 321px) and (max-width: 768px) {
+        &__left-column {
+            margin-right: 60px;
+        }
+    }
+    @media (min-width: 768px) and (max-width: 1279px) {
+        &__left-column {
+            margin-right: 0px;
+        }
+    }
+    &__left-column__title{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: $H600;
+        font-weight: normal;
+        color:$text-main-color;
+        line-height: 130%;
+        margin-bottom: 40px;
+        letter-spacing: 0.06em;
+        width: 280px;
+    }
+    @media (max-width: 320px) {
+        &__left-column__title{
+            font-size: $H500;
+            text-align: center;
+        }
+    }
+    &__left-column__email{
+        @include flex (flex-start, center, row);
+        margin-bottom: 40px;
+    }
+    &__left-column__email__icon{
+        margin-right: 20px;
+        
+    }
+    &__left-column__email__link{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: $H300;
+        font-weight: 400;
+        color: $text-email-footer;
+        line-height: 115%;
+        letter-spacing: 0.06em;
+    }
+    &__left-column__telephone{
+        @include flex (flex-start, center, row);
+    }
+    @media (max-width: 320px) {
+        &__left-column__telephone {
+            margin-bottom: 40px;
+        }
+    }
+    &__left-column__telephone__icon {
+        margin-right: 20px; 
+    }
+    &__left-column__telephone__link{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: $H300;
+        font-weight: 400;
+        color: $text-email-footer;
+        line-height: 115%;
+        letter-spacing: 0.06em;
+    }
+
+    &__right-column{
+        margin-right: 160px;
+        padding-top: 14px;
+    }
+    @media (max-width:320px) {
+        &__right-column {
+            margin-right: 0px;
+            padding-top: 0px;
+            @include flex (center, center, column);
+            margin-bottom: 40px;
+        }
+    }
+    @media (min-width: 321px) and (max-width: 768px) {
+        &__right-column {
+            margin-right: 0px;
+        }
+    }
+    @media (min-width: 768px) and (max-width: 1279px) {
+        &__right-column {
+            margin-right: 0px;
+        }
+    }
+    &__right-column__title{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: $H600;
+        font-weight: normal;
+        color:$text-main-color;
+        line-height: 130%;
+        margin-bottom: 34px;
+        letter-spacing: 0.06em;
+        width: 270px;
+    }
+    @media (max-width: 320px) {
+        &__right-column__title {
+            font-size: $H500; 
+            text-align: center;
+        }
+    }
+    &__right-column__first-adress{
+        @include flex (flex-start, center, row);
+        margin-bottom: 34px;
+    }
+    &__right-column__first-adress__icon{
+        margin-right: 20px; 
+    }
+    &__right-column__first-adress__link {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: $H300;
+        font-weight: normal;
+        color: $text-email-footer;
+        line-height: 115%;
+        letter-spacing: 0.06em;
+        width: 264px;  
+        font-style: normal;
+    }
+    &__left-column__second-adress{
+        @include flex (flex-start, center, row);
+    }
+    &__right-column__second-adress__icon{
+        margin-right: 20px; 
+    }
+    &__right-column__second-adress__link{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: $H300;
+        font-weight: 400;
+        color: $text-email-footer;
+        line-height: 115%;
+        letter-spacing: 0.06em;
+    }
+    @media (max-width: 320px){
+        &__left-column__second-adress {
+            align-self: flex-start;
+        }
+    }
+    &__image-wrapper {
+        width: 100%;
+        max-width: 300px;
+    }
+    &__img{
+        align-self: flex-start;
+        width: 100%;
+        height: auto;
+    }
+    @media (max-width:320px) {
+        &__img {
+            width: 260px;
+            height: 269px;
+            align-self: center;
+        }
+    }
+    @media (min-width: 321px) and (max-width: 768px) {
+        &__img {
+            height: 310px;
+            align-self: center;
+        }
+    }
+}// end of & 
+
+@media (max-width: 320px) {
+    .footer {
+        @include flex (center, center, column);
+        padding-top: 30px;
+    }
+}
+@media (min-width: 321px) and (max-width: 768px) {
+    .footer {
+        @include flex (center, center, column);
+        padding-top: 30px;
+    }
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+    .footer {
+        justify-content: space-around;
+    }
+}
