@@ -21,6 +21,12 @@ modalListItem.forEach( item => {
     item.textContent = 'Hello';
 });
 
+modal.addEventListener ('click', (e) => {
+        if (e.target === modal) {
+            modal.style.display = 'none';
+        }
+});
+
 }
 
 export default modalWindow(); 

@@ -10,6 +10,8 @@ $styles: modal;
    z-index: 1050;
    margin: 0;
    padding: 0;
+   background-color: $modal-area-bg-color;
+ 
 
 &__btn-close{
     @include flex (center, center, row);
@@ -28,8 +30,9 @@ $styles: modal;
 }
 &__content{
     @include flex (center, center, row);
-    border: 1px solid red;
     border-radius: 10px;
+    background-color: $modal-background-color ;
+    padding-right: 20px;
 }
 &__img{
     margin-right: 29px;
